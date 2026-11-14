@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.layout {
+    display: flex;
+
+    aside.sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: #394508;
+        width: 520px;
+
+        header {
+            margin-left: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+
+
+            a {
+                font-weight: 600;
+                font-size: 20px;
+                text-decoration: none;
+                color: #ffff;
+            }
+
+            button {
+                margin-right: 125px;
+                border: none;
+                background-color: #D2FD9C;
+                border-radius: 5px;
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    section.hero {
+        margin-top: 49px;
+        margin-left: 40px;
+
+        h1 {
+            font-weight: 500;
+            max-width: 340px;
+            font-size: 42px;
+            color: #ffff;
+
+            span {
+                color: #D2FD9C;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #CBCBCB;
+        }
+    }
+
+    section.offerings {
+        margin-top: 50px;
+        margin-left: 40px;
+        padding-right: 50px;
+
+        h2 {
+            color: #D2FD9C;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            list-style: none;
+            margin-bottom: 50px;
+
+            li {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 24px 12px;
+                text-align: center;
+                background-color: #619111;
+                border-radius: 10px;
+                gap: 15px;
+                font-size: 16px;
+                
+            }
+        }
+    }
+
+    footer.sidebar-footer {
+        nav {
+            display: flex;
+            margin-left: 40px;
+            gap: 15px;
+
+            a {
+                color: #D2FD9C;
+                text-decoration: none;
+                font-size: 18px;
+                padding-bottom: 200px;
+            }
+        }
+    }
+    main.content{
+        margin-inline: 40px;
+        margin-top: 50px;
+        align-items: center;
+        article{
+            display: flex;
+            justify-content: center;
+            h2{
+                width: 500px;
+                text-align: center;
+            }
+            
+        }
+        footer{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            margin-top:84px;
+        }
+    }
+}
